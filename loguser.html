@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>user_login</title>
+<script type="text/javascript">
+function matchpass(){
+var username=document.f2.username.value;
+var password=document.f2.password.value;
+
+if(username==null || password=="") {
+alert("username and password can't be empty!");
+return false;
+} else{
+return true;
+}
+
+if(password==password1){
+return true;
+}else {
+return false;
+}
+}
+</script>
+<style>
+body{
+	background-color:#f4f4f4;
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+}
+
+.container{
+	width:80%;
+
+	overflow:hidden;
+}
+
+#main-header{
+	background-color:coral;
+	color:#fff;
+}
+
+#navbar{
+	background-color:#333;
+	color:#fff;
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	display:inline;
+}
+
+#navbar a{
+	color:#fff;
+	text-decoration: none;
+	font-size:18px;
+	padding-right:15px;
+}
+#main-footer{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	margin-top:40px;
+}
+</style>
+</head>
+<body>
+<header id="main-header">
+		<div class="container">
+<img src="logo.jpg" style="width:170;height:100;" align="left">
+			<h1 height="100">SUNBEAM GRANITES</h1>
+		</div>
+	</header>
+
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="main.html">Home</a></li>
+				<li><a href="prod.html">Products</a></li>
+				<li><a href="loguser.html">Sign Up</a></li>
+
+
+			</ul>
+		</div>
+	</nav>
+
+<br><br>
+<center>
+<table cellspacing="100">
+<tc><td>
+<form name="f2" onsubmit="register.php">
+Username:<input type="username"  pattern="[a-z]*[A-Z]*" name="username" required /><br/><br>
+Email:<input type="text" name="email" required/></br><br>
+Password:<input type="password" name="password1" required /></br><br>
+Repeat Password:<input type="password" name="password1" required /></br><br>
+<button type="submit" style="width:30%"; >Sign Up</button>
+</form></td></tc>
+<tc><td>
+<form name="f2" onsubmit="login.php">
+Username:<input type="text"  name="email" name="username" /><br/><br>
+Password:<input type="password" name="password1" /></br><br>
+<button type="submit" style="width:30%"; >Login</button>
+</form>
+</td></tc>
+</table>
+</center>
+</body>
+</html>
